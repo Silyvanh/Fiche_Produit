@@ -1,11 +1,68 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <h1>Hi all !</h1>
+<head>
+  <meta charset="utf-8">
+  <meta name="langage" content="fr">
+  <meta name="author" content="Silyvanh">
+  <meta name="description" content="création d'une fiche produit">
+  <meta name="viewport" content="width=500, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  <title>Fiche produit</title>
+</head>
 
-  </body>
+<body>
+  <!-- Début du header et de la barre de navigation -->
+  <header>
+    <img src="img\Innisfree_logo.jpg" title="logo Innisfree" alt="logo Innisfree">
+    <nav>
+      <ul>
+        <li><a href="#">Nouveautés</a></li>
+        <li>|</li>
+        <li><a href="#">Maquillage</a></li>
+        <li>|</li>
+        <li><a href="#">Soins</a></li>
+        <li>|</li>
+        <li><a href="#">Offres spéciales</a></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li><a href="#">Mon compte</a></li>
+        <li>|</li>
+        <li><a href="#">Mon panier</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Fin du header et de la barre de navigation -->
+  <!-- Début de la fiche produit -->
+  <p id="categories">HOME > Nouveautés</p>
+  <div class="ficheproduit">
+    <figure>
+      <img src="img\10848_l.jpg" alt="huile démaquillante" title="huile démaquillante">
+    </figure>
+    <div class="description">
+      <h1>Huile démaquillante aux pépins de pomme</h1><br>
+      <p>Cette huile nettoyante, formulée avec de l'huile de graines de pommes et des extraits de pomme, aide à éliminer complètement le maquillage tout en conservant la peau fraîche et douce.</p>
+      <div class="formulaire">
+      <form method="post" action="traitement.php">
+      <p class="prix">14,50€</p><br>
+      <p>Quantité :
+        <input type="number" min="1" max="5"/></p><br>
+        <input id="aupanier" type="submit" value="Ajouter au panier" />
+      </div>
+    </div>
+  </div>
+  <!-- Fin de la fiche produit -->
+  <!-- Début du footer -->
+  <footer>
+    <nav>
+      <ul>
+        <li></li>
+      </ul>
+    </nav>
+
+  </footer>
+
+
+</body>
 </html>
