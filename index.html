@@ -16,54 +16,55 @@
 <body>
   <!-- Début du header et de la barre de navigation -->
   <header>
-    <img src="img\Innisfree_logo.jpg" title="logo Innisfree" alt="logo Innisfree">
+    <a href="index.html"><img src="img\Innisfree_logo.jpg" title="logo Innisfree" alt="logo Innisfree"></a>
+    <hr>
     <nav>
       <ul id="menu">
-
         <li>
           <a href="#">Nouveautés</a>
         </li>
-
-        <li>|</li>
-
         <li>
           <a href="#">Maquillage</a>
+          <ul>
+            <li><a href="#">Teint</a></li>
+            <li><a href="#">Yeux</a></li>
+            <li><a href="#">Lèvres</a></li>
+          </ul>
         </li>
-
-        <li>|</li>
-
         <li>
           <a href="#">Soins</a>
+          <ul>
+            <li><a href="#">Peaux sèches</a></li>
+            <li><a href="#">Peaux mixtes</a></li>
+            <li><a href="#">Peaux grasses</a></li>
+          </ul>
         </li>
-
-        <li>|</li>
-
         <li>
-          <a href="#">Offres spéciales</a>
+          <a href="portfolio.html">Portfolio</a>
         </li>
-
-        <li></li>
-        <li></li>
-        <li></li>
-
         <li>
           <a href="#">Mon compte</a>
+          <ul>
+            <li><a href="#">Inscription</a></li>
+            <li><a href="#">Connection</a></li>
+          </ul>
         </li>
-
-        <li>|</li>
-
         <li>
           <a href="#">Mon panier</a>
+          <ul>
+            <li><a href="#">Voir le panier</a></li>
+            <li><a href="#">Passer commande</a></li>
+          </ul>
         </li>
       </ul>
     </nav>
   </header>
   <!-- Fin du header et de la barre de navigation -->
   <!-- Début de la fiche produit -->
-  <p id="categories">HOME > Nouveautés</p>
+  <hr>
   <div class="ficheproduit">
-    <figure>
 
+    <figure>
       <div class="slideshow-container">
         <div class="mySlides">
           <img src="img\10848_l.jpg" style="width:500px">
@@ -81,27 +82,26 @@
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
       <br>
-
       <div style="text-align:center">
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
       </div>
-
-
     </figure>
+
     <div class="description">
-      <h1>Apple seed cleansing oil 150ml</h1><br>
+      <h1>Apple seed cleansing oil 150ml</h1>
+      <hr>
       <p>Cette huile nettoyante, formulée avec de l'huile de graines de pommes et des extraits de pomme, aide à éliminer complètement le maquillage tout en conservant la peau fraîche et douce.</p>
-      <div class="formulaire">
         <form method="post" action="#">
           <p class="prix">14,50€</p><br>
           <p>Quantité :
             <input type="number" min="1" max="5"/></p><br>
             <input id="aupanier" type="submit" value="Ajouter au panier" />
-          </div>
         </div>
       </div>
+
+
 
       <div class="maybe">
         <p></p>

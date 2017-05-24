@@ -2,52 +2,79 @@
   font-family: 'Open Sans Condensed', sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing:border-box;
 }
 
 /** début header et barre de nav **/
 header img {
-  width: 150px;
+  width: 300px;
   display: block;
   margin: auto;
   padding: 10px;
 }
 
-header li, a {
-  list-style: none;
-  display: inline;
-  color: #556D0F;
-  text-decoration: none;
+#menu {
+  display: flex;
+  font-size: 18px;
+  font-family: 'Open Sans Condensed', sans-serif;
   font-weight: bold;
 }
 
-#menu a {
-  color: #556D0F;
-
+#menu ul {
+  margin:0;
+  padding:0;
+  text-align:center;
 }
 
-#menu {
-  display: flex;
-  justify-content: space-around;
-  background: #ECD6AF;
-  padding: 20px;
+#menu li {
+  float:left;
+  margin:auto;
+  padding:0;
+  background-color:#ECD6AF;
+  list-style:none;
+  text-align: center;
+  border-right: 1px solid white;
+}
+
+#menu li a {
+  display:block;
+  width:200px;
+  color:grey;
+  text-decoration:none;
+  padding:16px;
+}
+
+#menu li a:hover {
+  color:#556D0F;
+}
+
+#menu li ul li {
+  display:none;
+}
+
+#menu li:hover ul li {
+  display:block;
+  border-top: 1px solid white;
+  float: none;
 }
 
 #menu li ul {
-  position: absolute;
+  position:absolute;
 }
+
+
 /** fin header et barre de nav **/
 
 /** Début slideshow **/
 
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 500px;
   position: relative;
   margin: auto;
 }
 
 .mySlides {
   display: none;
+  margin-top: 10px;
 }
 
 /* Next & previous buttons */
@@ -92,54 +119,20 @@ header li, a {
   background-color: #717171;
 }
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
 /** fin slideshow **/
 
 /** Début fiche produit **/
-figure img {
-  width: 400px;
-}
-
-#categories {
-  margin: 20px;
-}
 
 div.ficheproduit {
-  display: flex;
-  justify-content: space-around;
-  padding: 50px;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+margin: 200px;
 }
 
 div.description {
-  padding-left: 50px
-}
-
-div.formulaire {
-  padding-top: 180px;
-  padding-left: 20px;
-}
-
-.prix {
-  font-size: 28px;
-  font-weight: bold;
-  color: #556D0F;
+  margin: 80px;
+  font-size: 18px;
 }
 
 #aupanier {
@@ -173,7 +166,7 @@ a.btn-primary {
 
 /* hover */
 .thumbnail {
-    position: relative;
+  position: relative;
 }
 
 img {
