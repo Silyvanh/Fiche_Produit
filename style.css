@@ -123,6 +123,7 @@ header img {
 
 /** Début fiche produit **/
 
+
 div.ficheproduit {
 display: flex;
 flex-direction: row;
@@ -198,13 +199,31 @@ img {
 
 /** fin fiche produit **/
 /** début footer **/
-footer {
-  height: 200px;
-  display: flex;
-  justify-content: space-around;
+footer nav {
+  display: inline-flex;
+  padding: 130px;
 }
 
 footer li {
-  display: inline;
-  float: right;
+  list-style: none;
+}
+
+footer input {
+  background: #ECD6AF;
+  border: 1px solid white;
+  padding: 10px;
+  margin: 2px;
+}
+
+footer input::placeholder {
+  color: grey;
+  font-weight: bold;
+  padding-left: 8px;
+}
+.envoyer {
+  background: #ECD6AF;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #E90649;
+  width: 282px;
 }
